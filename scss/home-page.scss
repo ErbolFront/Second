@@ -1,0 +1,51 @@
+.nav{
+    @include setFlexBox(space-between);
+    width: 87%;
+    margin: 0 auto;
+
+    &_logo{
+        font-size: 34px;
+        color: #fff;
+        transition: 0.3s all linear;
+
+        &:hover{
+            color: $primaryHover;
+        }
+    }
+    &_navbar{
+        @include setFlexBox(space-around);
+        width: 50%;
+        list-style: none;
+
+         li{
+            height: 40px;
+            line-height: 40px;
+         }
+         a{
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s all linear;
+
+            &:hover{
+                color: $primaryHover;
+            }
+         }
+    }
+}
+.container{
+    @extend %flexBox;
+    width: 87%;
+    margin: 100px auto;
+
+    .col{
+        width: 30%;
+        border-radius: 20px;
+        background-color: $primaryBlaclk;
+        height: 250px;
+        transition: 0.3s all linear;
+
+        &:hover{
+            background-color: $primaryHover;
+        }
+    }
+}

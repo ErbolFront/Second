@@ -1,0 +1,12 @@
+$primaryBlaclk: #252525;
+$primaryWhite: #fff;
+$primaryHover: tomato;
+
+%flexBox{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin setFlexBox($space) {
+    display: flex;
+    justify-content: $space;
+}
